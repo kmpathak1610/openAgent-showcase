@@ -92,15 +92,23 @@ graph TB
 
 The diagram reflects the actual implementation: the frontend only talks to the backend over REST and WebSocket; the runtime fans out to LLM, retrieval, memory, tools, and approvals; all tenant data flows through the org-scoped repository to PostgreSQL + pgvector.
 
-Explorable exhibits live in [`docs/diagrams/`](docs/diagrams/) (interactive HTML + PNG previews, Archify showcase-validated 9/9 each):
+Explorable exhibits live in [`docs/diagrams/`](docs/diagrams/) (interactive HTML + PNG previews, Archify showcase-validated 9/9 each). Click any image to open its interactive exhibit:
 
-- [System architecture](docs/diagrams/architecture.html) — components and trust boundaries
-- [Tool execution with approval](docs/diagrams/workflow-tool-approval.html) — planning loop and safety gates
-- [Message to agent reply](docs/diagrams/sequence-message-reply.html) — full request lifecycle
-- [RAG knowledge flow](docs/diagrams/dataflow-rag.html) — ingest to grounded prompt
+### System architecture — components and trust boundaries
 
-![OpenAgent system architecture](docs/diagrams/architecture.png)
-![OpenAgent tool execution with approval](docs/diagrams/workflow-tool-approval.png)
+[![OpenAgent system architecture](docs/diagrams/architecture.png)](docs/diagrams/architecture.html)
+
+### Tool execution with approval — planning loop and safety gates
+
+[![OpenAgent tool execution with approval](docs/diagrams/workflow-tool-approval.png)](docs/diagrams/workflow-tool-approval.html)
+
+### Message to agent reply — full request lifecycle
+
+[![OpenAgent message to agent reply](docs/diagrams/sequence-message-reply.png)](docs/diagrams/sequence-message-reply.html)
+
+### RAG knowledge flow — ingest to grounded prompt
+
+[![OpenAgent RAG knowledge flow](docs/diagrams/dataflow-rag.png)](docs/diagrams/dataflow-rag.html)
 
 ## 5. Technology stack
 
